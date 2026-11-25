@@ -121,6 +121,23 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
 .wd.w{background:#DDF1E6;color:#1F6B50}.wd.p{background:#DCE6F7;color:#34508F}.wd.m,.wd.x{background:#EEF1F8;color:#5E6B86}.wd.n{background:#FFF4DC;color:#8A6420}.wd.t{outline:2px solid #1F2A44}
 .jmap{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin:10px 0}.jd{aspect-ratio:1;border-radius:8px;background:#EEF1F8;color:#8A94AB;display:flex;align-items:center;justify-content:center;font-size:11px;border:0}.jd.p{background:#CBD8F2;color:#2F3E6E}.jd.w{background:#BFE5D3;color:#1F6B50}.jd.m,.jd.x{background:#EEF1F8;color:#8A94AB;border:0}.jd.t{outline:2px solid #1F2A44;outline-offset:1px;font-weight:700}
 .all90{margin-top:12px}.all90 summary{cursor:pointer;color:#34508F;font-weight:600;padding:6px 0}
+
+/* ---------- simple layout: slim top bar, bottom tabs ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 2px 6px}.top b{font:800 24px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;letter-spacing:-.04em;color:#22305A}.top span{font-size:12.5px;color:#5E6B86}
+.shell{padding-bottom:110px}
+.bnav{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid #DCE3F1;justify-content:center;gap:2px;padding:6px 8px calc(6px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px #2a3a6a14}
+body.unlocked .bnav{display:flex}
+.bnav button{flex:1;max-width:130px;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:7px 2px;font-size:12px;line-height:1.1;color:#5E6B86;font-weight:600;border-radius:14px;min-height:56px;cursor:pointer}
+.bnav svg{width:25px;height:25px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.bnav button.active{color:#3F5A9E;background:#EEF1F8}
+.seg{display:flex;gap:4px;background:#E9EEF8;border-radius:14px;padding:4px;margin:2px 0 14px}.seg button{flex:1;border:0;background:transparent;border-radius:11px;padding:11px 6px;font-weight:600;color:#44506F;font-size:15.5px;cursor:pointer}.seg button.active{background:#fff;color:#22305A;box-shadow:0 2px 8px #2a3a6a1f}
+.greet{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,#22305A,#3F5A9E);color:#fff;border-radius:20px;padding:20px 22px;margin:6px 0 14px}.greet h2{font:800 28px/1.15 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;margin:8px 0 4px;color:#fff;letter-spacing:-.03em}.greet .pill{background:#ffffff26;color:#fff}.greet p{color:#E6ECF8;margin:0;max-width:520px;font-size:15px}.greet .btn.primary{background:#fff;color:#22305A;box-shadow:none}
+.menu{display:flex;flex-direction:column;gap:10px;max-width:640px}.menu button{display:flex;align-items:center;gap:14px;text-align:left;width:100%;background:#fff;border:1px solid #DCE3F1;border-radius:16px;padding:16px;font-size:16.5px;color:#1F2A44;cursor:pointer}.menu b{display:block}.menu span{display:block;font-size:14px;color:#5E6B86;font-weight:400;margin-top:2px}.menu svg{flex:0 0 26px}
+.back{background:none;border:0;color:#34508F;font-weight:600;font-size:15.5px;padding:8px 0 4px;cursor:pointer}
+.view{padding-top:10px}
+@media(max-width:560px){.top span{display:none}.greet{padding:18px}}
+#todayBanner{display:none!important}
+@media print{.bnav,.top,.back{display:none!important}}
 </style></head>
 <body>
 <div class="lock" id="lockScreen">
@@ -140,37 +157,15 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
 </div>
 <main class="shell">
 
-<header class="hero">
-  <div class="eyebrow">Plan your time · Learn something new · Track your money</div>
-  <h1>Planniit</h1>
-  <button type="button" class="bigtext" id="bigText" aria-pressed="false">Make text bigger</button>
-  <p>A little more intention. A little more progress. A different future. Track the choices, skills and opportunities that shape the life you're building.</p>
-  <div class="commit">
-    <label for="commitment">My personal commitment</label>
-    <div class="hint">Write one sentence about what you are committing to. This whole planner is built around what you write here, so make it yours.</div>
-    <input id="commitment" data-ai="commitment" placeholder="e.g. I will invest in my future, one intentional day at a time.">
-    <div class="msg" id="msg-commit"></div>
-  </div>
-</header>
+<header class="top"><b>Planniit</b><span>Plan your time · Learn something new · Track your money</span></header>
 
-<nav class="tabs" aria-label="Planner sections">
-  <button class="tab active" data-tab="dashboard">Home</button>
-  <button class="tab" data-tab="vision">Vision / Goals</button>
-  <button class="tab" data-tab="daily">Today</button>
-  <button class="tab" data-tab="time">My time</button>
-  <button class="tab" data-tab="skills">Learning</button>
-  <button class="tab" data-tab="money">Money</button>
-  <button class="tab" data-tab="review">This week</button>
-  <button class="tab" data-tab="monthly">This month</button>
-  <button class="tab" data-tab="progress">My progress</button>
-</nav>
+
 
 <!-- START HERE -->
 <section class="view active" id="dashboard">
-  <div class="head"><div><h2>Your life, by intention.</h2><p class="sub">A simple place to plan, track and reflect. Start with step 1 below.</p></div><span class="pill" id="todayLabel"></span></div>
-  <div class="trust"><span>Private: stays on your phone</span><span>No ads. No account.</span><span>Works offline</span><span>Made for any age</span></div>
-  <div class="notice" id="monthBanner" style="display:none;margin:14px 0"></div>
-  <div class="notice" id="todayBanner" style="display:none;margin-bottom:14px"></div>
+  <div class="notice" id="monthBanner" style="display:none;margin:6px 0 14px"></div>
+  <div class="notice" id="todayBanner" style="display:none;margin:6px 0 14px"></div>
+  <div class="greet"><div><span class="pill" id="todayLabel"></span><h2 id="greetHello">Hello</h2><p id="homeCommit"></p></div><button class="btn primary" id="homeCta" data-go="daily">Plan today</button></div>
   <div class="grid">
     <div class="card span-12" id="journeyCard">
       <div class="score">
@@ -192,47 +187,7 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
       <p class="small" id="startText" style="margin:0 0 6px"></p>
       <div id="startList"></div>
     </div>
-    <div class="card span-12">
-      <div class="label">What Planniit is for</div>
-      <p style="margin:0 0 10px">Planniit helps you turn good intentions into daily action. You set a 90-day vision / goals, plan your days, see where your time goes, build one skill, plan your money and your monthly budget, and look back every week and every month to see how far you've come.</p>
-      <p style="margin:0 0 10px"><strong>Your privacy:</strong> everything you enter here is saved only on this device, your own phone or computer. We don't have access to it, we can't see it and we never collect it. It is personal to you.</p>
-      <p class="small" style="margin:0">Because it lives on your device, clearing your phone's website data would erase it. Use "Save my planner" at the bottom of the Home page now and then to keep a backup copy.</p>
-    </div>
-    <div class="card span-12">
-      <div class="label">How it works: four simple habits</div>
-      <div class="steps">
-        <button class="step" data-go="vision"><b>1</b>Set your 90-day vision / goals<br><span>Decide what you're building.</span></button>
-        <button class="step" data-go="daily"><b>2</b>Plan daily<br><span>Pick 3 tasks or priorities each day.</span></button>
-        <button class="step" data-go="skills"><b>3</b>Log learning as it happens<br><span>Short notes beat long memories.</span></button>
-        <button class="step" data-go="review"><b>4</b>Review weekly and monthly<br><span>Look back, adjust, continue.</span></button>
-      </div>
-    </div>
-    <div class="card span-12" id="remindCard">
-      <div class="label">Daily reminder</div>
-      <p style="margin:0 0 10px">The planner only works if you open it. Pick a time, then tap the button. Google Calendar opens with your reminder already filled in. Tap Save and it reminds you every day.</p>
-      <div class="calcgrid">
-        <div><label class="label" for="remindTime">Remind me at</label><input type="time" id="remindTime" value="08:00"></div>
-        <div style="align-self:end"><a class="btn primary" id="remindGoogle" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Set my daily reminder</a></div>
-      </div>
-      <div class="msg" id="msg-remind"></div>
-      <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
-      <div class="label">Nudges when you forget</div>
-      <p style="margin:0 0 10px">If you have not planned your day by your reminder time, Planniit nudges you on your phone. First at your time, then an hour later, then two hours later.</p>
-      <div class="actions" style="margin-top:0"><button class="btn primary" id="nudgeOn">Turn on nudges</button><button class="btn" id="nudgeTest">Send me a test nudge</button></div>
-      <div class="msg" id="msg-nudge"></div>
-      <p class="small" style="margin:10px 0 0">Nudges work while Planniit is open on your phone, even in the background. If you close it completely, your phone may stop them, so keep the Google Calendar reminder too.</p>
-      <p class="small" style="margin:10px 0 0">Prefer an alarm? Set a daily alarm on your phone labelled "Plan my day". We never see your reminder time. It stays on your device.</p>
-    </div>
-    <div class="card span-12" id="installCard">
-      <div class="label">Use Planniit like an app</div>
-      <p style="margin:0 0 8px">Put Planniit on your home screen so it opens in one tap, just like an app. You do not need an app store. After you have opened it once with internet, it also works with no internet at all.</p>
-      <ul class="list small" style="margin-top:4px">
-        <li><strong>iPhone:</strong> open Planniit in Safari, tap the Share icon, then tap "Add to Home Screen".</li>
-        <li><strong>Android:</strong> open Planniit in Chrome, tap the menu (three dots), then tap "Add to Home screen" or "Install app".</li>
-        <li><strong>Computer:</strong> in Chrome, look for the install icon at the right end of the address bar.</li>
-      </ul>
-    </div>
-    <div class="card span-7" id="calcCard">
+    <div class="card span-12" id="calcCard">
       <div class="label">What is scrolling really costing you?</div>
       <p style="margin:0 0 12px">How many hours a day do you spend scrolling? Tap + to see what it adds up to, and what you could build instead.</p>
       <div class="calcgrid">
@@ -241,6 +196,11 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
       </div>
       <div class="res" id="calcOut" style="margin-top:14px">Your numbers will appear here.</div>
     </div>
+    <div class="card span-12"><div class="label">Your recent activity</div><div id="recentActivity" class="small">Your saved daily plans and learning sessions will appear here.</div></div>
+    <div class="card span-12" id="loveCard" style="display:none"></div>
+    <div class="card span-12" id="shareCard" style="display:none"><div class="label">Share Planniit</div><p style="margin:0 0 10px">Know someone who would love to plan their time, skills and money? Send them Planniit.</p><button class="btn primary" id="shareBtn">Share Planniit with a friend</button></div>
+  </div>
+  <div id="legacy" hidden>
     <div class="card span-5"><div class="label">Build something that is yours</div><p style="font:20px/1.35 Georgia;margin:5px 0 10px">Do not settle for temporary enjoyment.</p><p class="small" style="font-size:13px">Comfort that someone else provides can end. A skill, an income or a business of your own stays with you. Whoever is helping you today, build your own foundation too.</p></div>
     <div class="card span-3"><div class="small">Learning time logged</div><div class="metric" id="mLearning">0h</div><div class="small">Across your skill sessions</div></div>
     <div class="card span-3"><div class="small">Daily tasks / priorities completed</div><div class="metric" id="mTasks">0</div><div class="small">Across your daily plans</div></div>
@@ -248,9 +208,6 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
     <div class="card span-3"><div class="small">Days with a daily plan</div><div class="metric" id="mDays">0</div><div class="small" id="mStreak">A record of showing up</div></div>
     <div class="card span-7"><div class="label">Your 90-day focus</div><h3 id="dashGoal" style="font:22px Georgia;margin:5px 0 10px">Add your vision / goals to get started.</h3><div class="small" id="dashSkill">Primary skill: not set</div><div class="small" id="dashDay" style="margin-top:4px;font-weight:600"></div><div class="actions"><button class="btn primary" data-go="daily">Plan today</button><button class="btn" data-go="vision">Look at my vision / goals</button></div></div>
     <div class="card span-5"><div class="label">A useful reminder</div><p style="font:20px/1.35 Georgia;margin:5px 0 10px">Being busy and making progress are not the same thing.</p><p class="small">Choose actions that build knowledge, capability, financial resilience, meaningful relationships and wellbeing.</p></div>
-    <div class="card span-12"><div class="label">Your recent activity</div><div id="recentActivity" class="small">Your saved daily plans and learning sessions will appear here.</div></div>
-    <div class="card span-12" id="loveCard" style="display:none"></div>
-    <div class="card span-12" id="shareCard" style="display:none"><div class="label">Share Planniit</div><p style="margin:0 0 10px">Know someone who would love to plan their time, skills and money? Send them Planniit.</p><button class="btn primary" id="shareBtn">Share Planniit with a friend</button></div>
   </div>
 </section>
 
@@ -258,6 +215,12 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
 <section class="view" id="vision">
   <div class="head"><div><h2>My vision / goals for the next 90 days</h2><p class="sub">Decide what you're building and why it matters.</p></div></div>
   <div class="grid">
+    <div class="card span-12">
+      <label class="label" for="commitment">My personal commitment</label>
+      <p class="small" style="margin:4px 0 8px">One sentence about what you are committing to.</p>
+      <input id="commitment" data-ai="commitment" placeholder="e.g. I will invest in my future, one intentional day at a time.">
+      <div class="msg" id="msg-commit"></div>
+    </div>
     <div class="card span-6">
       <div class="field"><label class="label" for="visionGoal">My 90-day vision / goals</label><textarea id="visionGoal" data-ai="vision" placeholder="What would you like to be different 90 days from now?"></textarea></div>
       <div class="field"><label class="label" for="visionWhy">Why does this matter to me?</label><textarea id="visionWhy" data-ai="why" placeholder="Your reason for committing to this."></textarea></div>
@@ -445,8 +408,39 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
   </div>
 </section>
 
-<div class="footer">Don't just watch life happen. Participate in building yours.</div>
-<div class="card" id="dataCard" style="margin:0 0 30px">
+<section class="view" id="more">
+  <div class="head"><div><h2>More</h2><p class="sub">Reviews, your progress report, reminders and your saved copies.</p></div></div>
+  <div class="menu"><button type="button" data-go="review"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg><div><b>This week</b><span>Look back and plan next week</span></div></button><button type="button" data-go="monthly"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H5zM5 9h14"/></svg><div><b>This month</b><span>Rate your month and set a focus</span></div></button><button type="button" data-go="progress"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><b>My progress report</b><span>See how far you have come. Download as PDF or Word</span></div></button><button type="button" data-go="reminders"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0-6 6c0 6-2 7-2 7h16s-2-1-2-7a6 6 0 0 0-6-6zM10 20a2 2 0 0 0 4 0"/></svg><div><b>Daily reminder and nudges</b><span>So you never forget to plan your day</span></div></button><button type="button" data-go="backup"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg><div><b>Save or restore my planner</b><span>Keep a copy safe, or bring your planner back</span></div></button><button type="button" data-go="about"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v.01M12 11v5M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/></svg><div><b>How Planniit works</b><span>A short guide, privacy and how to install it</span></div></button></div>
+</section>
+
+<section class="view" id="reminders">
+  <button type="button" class="back" data-go="more">&larr; Back to More</button>
+  <div class="head"><div><h2>Daily reminder and nudges</h2><p class="sub">Never forget to plan your day.</p></div></div>
+  <div class="grid">
+    <div class="card span-12" id="remindCard">
+      <div class="label">Daily reminder</div>
+      <p style="margin:0 0 10px">The planner only works if you open it. Pick a time, then tap the button. Google Calendar opens with your reminder already filled in. Tap Save and it reminds you every day.</p>
+      <div class="calcgrid">
+        <div><label class="label" for="remindTime">Remind me at</label><input type="time" id="remindTime" value="08:00"></div>
+        <div style="align-self:end"><a class="btn primary" id="remindGoogle" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Set my daily reminder</a></div>
+      </div>
+      <div class="msg" id="msg-remind"></div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+      <div class="label">Nudges when you forget</div>
+      <p style="margin:0 0 10px">If you have not planned your day by your reminder time, Planniit nudges you on your phone. First at your time, then an hour later, then two hours later.</p>
+      <div class="actions" style="margin-top:0"><button class="btn primary" id="nudgeOn">Turn on nudges</button><button class="btn" id="nudgeTest">Send me a test nudge</button></div>
+      <div class="msg" id="msg-nudge"></div>
+      <p class="small" style="margin:10px 0 0">Nudges work while Planniit is open on your phone, even in the background. If you close it completely, your phone may stop them, so keep the Google Calendar reminder too.</p>
+      <p class="small" style="margin:10px 0 0">Prefer an alarm? Set a daily alarm on your phone labelled "Plan my day". We never see your reminder time. It stays on your device.</p>
+    </div>
+  </div>
+</section>
+
+<section class="view" id="backup">
+  <button type="button" class="back" data-go="more">&larr; Back to More</button>
+  <div class="head"><div><h2>Save or restore my planner</h2><p class="sub">Everything you enter stays on this device. Keep a copy so you never lose it.</p></div></div>
+  <div class="grid">
+    <div class="card span-12" id="dataCard">
   <div class="label">Keep your planner safe</div>
   <p class="small" style="font-size:13px;margin:0 0 10px">Your entries are saved on this device only, so nobody else can see them. If you change phone or clear your phone's website data, they would be lost. Save a copy now and then and you can bring everything back any time.</p>
   <div class="actions" style="margin-top:0">
@@ -465,9 +459,47 @@ a{color:#34508F}.quote{border-left-color:#D9825B}
     <li>If a download does not start, open Planniit in Chrome or Safari instead of inside Instagram or WhatsApp.</li>
   </ul>
 </div>
+  </div>
+</section>
+
+<section class="view" id="about">
+  <button type="button" class="back" data-go="more">&larr; Back to More</button>
+  <div class="head"><div><h2>How Planniit works</h2><p class="sub">A short guide.</p></div></div>
+  <div class="grid">
+    <div class="card span-12"><div class="trust"><span>Private: stays on your phone</span><span>No ads. No account.</span><span>Works offline</span><span>Made for any age</span></div></div>
+    <div class="card span-12">
+      <div class="label">What Planniit is for</div>
+      <p style="margin:0 0 10px">Planniit helps you turn good intentions into daily action. You set a 90-day vision / goals, plan your days, see where your time goes, build one skill, plan your money and your monthly budget, and look back every week and every month to see how far you've come.</p>
+      <p style="margin:0 0 10px"><strong>Your privacy:</strong> everything you enter here is saved only on this device, your own phone or computer. We don't have access to it, we can't see it and we never collect it. It is personal to you.</p>
+      <p class="small" style="margin:0">Because it lives on your device, clearing your phone's website data would erase it. Use "Save my planner" at the bottom of the Home page now and then to keep a backup copy.</p>
+    </div>
+    <div class="card span-12">
+      <div class="label">How it works: four simple habits</div>
+      <div class="steps">
+        <button class="step" data-go="vision"><b>1</b>Set your 90-day vision / goals<br><span>Decide what you're building.</span></button>
+        <button class="step" data-go="daily"><b>2</b>Plan daily<br><span>Pick 3 tasks or priorities each day.</span></button>
+        <button class="step" data-go="skills"><b>3</b>Log learning as it happens<br><span>Short notes beat long memories.</span></button>
+        <button class="step" data-go="review"><b>4</b>Review weekly and monthly<br><span>Look back, adjust, continue.</span></button>
+      </div>
+    </div>
+    <div class="card span-12" id="installCard">
+      <div class="label">Use Planniit like an app</div>
+      <p style="margin:0 0 8px">Put Planniit on your home screen so it opens in one tap, just like an app. You do not need an app store. After you have opened it once with internet, it also works with no internet at all.</p>
+      <ul class="list small" style="margin-top:4px">
+        <li><strong>iPhone:</strong> open Planniit in Safari, tap the Share icon, then tap "Add to Home Screen".</li>
+        <li><strong>Android:</strong> open Planniit in Chrome, tap the menu (three dots), then tap "Add to Home screen" or "Install app".</li>
+        <li><strong>Computer:</strong> in Chrome, look for the install icon at the right end of the address bar.</li>
+      </ul>
+    </div>
+    <div class="card span-12"><div class="label">Text size</div><p style="margin:0 0 10px">Make everything bigger if it is easier on your eyes.</p><button type="button" class="btn" id="bigText" aria-pressed="false">Make text bigger</button></div>
+  </div>
+</section>
+
+
 </main>
 
 <div class="toast" id="toast"></div>
+<nav class="bnav" aria-label="Main"><button type="button" data-group="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg><span>Home</span></button><button type="button" data-group="plan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg><span>Plan</span></button><button type="button" data-group="learn"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Time &amp; Learn</span></button><button type="button" data-group="money"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg><span>Money</span></button><button type="button" data-group="more"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg><span>More</span></button></nav>
 
 <!-- AI helper -->
 <div class="overlay" id="aiModal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="aiTitle">
@@ -547,7 +579,18 @@ function msg(page,text,type){const el=$('msg-'+page);if(!el)return;el.textConten
 function clearMsgs(){document.querySelectorAll('.msg').forEach(m=>m.style.display='none')}
 function bad(id){const el=$(id);if(el){el.classList.add('invalid');el.focus({preventScroll:false})}}
 function fail(page,text,focusId){msg(page,text,'err');if(focusId)bad(focusId);return false}
-function nav(id){clearMsgs();document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='progress')renderProgress();const at=document.querySelector('.tab.active');if(at&&at.scrollIntoView)at.scrollIntoView({block:'nearest',inline:'center'})}
+const GROUPS={home:['dashboard'],plan:['daily','vision'],learn:['time','skills'],money:['money'],more:['more','review','monthly','progress','reminders','backup','about']};
+const SEGS={plan:[['daily','Today'],['vision','My goals']],learn:[['time','My time'],['skills','Learning']]};
+const lastIn={};
+function groupOf(id){for(const g in GROUPS)if(GROUPS[g].indexOf(id)>=0)return g;return 'home'}
+function nav(id){
+  clearMsgs();const g=groupOf(id);lastIn[g]=id;
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+  document.querySelectorAll('.bnav button').forEach(b=>b.classList.toggle('active',b.dataset.group===g));
+  document.querySelectorAll('.seg button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));
+  window.scrollTo({top:0,behavior:'smooth'});if(id==='progress')renderProgress()}
+['review','monthly','progress'].forEach(id=>{const v=document.getElementById(id);if(v&&!v.querySelector('.back')){const b=document.createElement('button');b.type='button';b.className='back';b.dataset.go='more';b.innerHTML='&larr; Back to More';v.insertBefore(b,v.firstChild)}});
+Object.keys(SEGS).forEach(g=>SEGS[g].forEach(x=>{const v=document.getElementById(x[0]);if(!v)return;const d=document.createElement('div');d.className='seg';d.innerHTML=SEGS[g].map(y=>`<button type="button" data-go="${y[0]}">${y[1]}</button>`).join('');v.insertBefore(d,v.firstChild)}));
 function done(page,text){msg(page,text,'ok');toast(text);const next=TABS[(TABS.indexOf(page)+1)%TABS.length];setTimeout(()=>nav(next),1100)}
 document.addEventListener('input',e=>{if(e.target.classList)e.target.classList.remove('invalid')});
 
@@ -583,7 +626,7 @@ document.addEventListener('click',e=>{
   const step=+box.dataset.step,max=+box.dataset.max,cur=parseFloat(inp.value)||0;
   let n=b.dataset.d==='1'?cur+step:cur-step;n=Math.min(max,Math.max(0,Math.round(n*100)/100));
   inp.value=n;inp.dispatchEvent(new Event('input',{bubbles:true}))});
-document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>nav(b.dataset.tab));
+document.querySelectorAll('.bnav button').forEach(b=>b.onclick=()=>{const g=b.dataset.group;nav(g==='more'||g==='home'?GROUPS[g][0]:(lastIn[g]||GROUPS[g][0]))});
 document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(!g)return;e.preventDefault();nav(g.dataset.go);window.scrollTo(0,0)});
 
 /* ---------- dashboard ---------- */
@@ -599,6 +642,9 @@ function renderDashboard(){
   let dd='';if(data.vision.start){const n=Math.floor((new Date(today()+'T00:00')-new Date(data.vision.start+'T00:00'))/864e5)+1;dd=n<1?'Your 90 days start on '+data.vision.start:n>90?'Your 90 days are complete. Time to set your next ones.':'Day '+n+' of 90'}$('dashDay').textContent=dd;
   const pd=new Set(data.daily.map(x=>x.date));let streak=0;const c=new Date(today()+'T00:00');const f=x=>x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0');if(!pd.has(f(c)))c.setDate(c.getDate()-1);while(pd.has(f(c))){streak++;c.setDate(c.getDate()-1)}
   $('mStreak').textContent=streak?'Streak: '+streak+(streak>1?' days':' day')+' in a row':'Plan today to start a streak';
+  const hr=new Date().getHours();$('greetHello').textContent=(hr<12?'Good morning':hr<17?'Good afternoon':'Good evening')+(data.commitment?'':'');
+  $('homeCommit').textContent=data.commitment?'\u201C'+data.commitment+'\u201D':'Plan one day at a time. Small steps add up.';
+  {const pd=data.daily.find(x=>x.date===today());$('homeCta').textContent=pd?'See today\'s plan':'Plan today';$('homeCta').dataset.go='daily'}
   $('todayLabel').textContent=new Date().toLocaleDateString(undefined,{weekday:'long',day:'numeric',month:'short',year:'numeric'});
   const recent=[...data.skills.slice(-3).reverse().map(x=>`<p>Learning · ${esc(x.date)} · ${esc(x.skill)} · ${x.hours}h</p>`),...data.daily.slice(-3).reverse().map(x=>`<p>Daily plan · ${esc(x.date)} · ${x.tasks.filter(t=>t.done).length}/3 tasks</p>`)];
   $('recentActivity').innerHTML=recent.join('')||'Your saved daily plans and learning sessions will appear here.'
@@ -1382,7 +1428,7 @@ function renderStart(){
     {t:'See where your time goes',s:'Add the hours from today',done:data.times.length>0,go:()=>nav('time')},
     {t:'Log a learning session',s:'Even 30 minutes counts',done:data.skills.length>0,go:()=>nav('skills')},
     {t:'Set up this month\'s budget',s:'Money coming in, money going out',done:budgetUsed,go:()=>{nav('money');showSub('budget')}},
-    {t:'Turn on a daily reminder',s:'So you never forget to plan',done:!!s.reminderTime,go:()=>{const c=$('remindCard');if(c)c.scrollIntoView({behavior:'smooth',block:'center'})}}];
+    {t:'Turn on a daily reminder',s:'So you never forget to plan',done:!!s.reminderTime,go:()=>nav('reminders')}];
   const n=items.filter(i=>i.done).length,card=$('startCard');
   if(n===items.length){card.style.display='none';return}
   card.style.display='block';$('startBar').style.width=Math.round(n/items.length*100)+'%';$('startText').textContent=n+' of '+items.length+' done. Tap a step to begin.';
