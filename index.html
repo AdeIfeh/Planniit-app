@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cdefs%3E%0A%3ClinearGradient id=%22bg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%233A33A0%22/%3E%3Cstop offset=%221%22 stop-color=%22%2312143A%22/%3E%3C/linearGradient%3E%0A%3ClinearGradient id=%22pl%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23FFD98A%22/%3E%3Cstop offset=%221%22 stop-color=%22%23F0806C%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23bg)%22/%3E%0A%3Cg fill=%22%23fff%22%3E%3Ccircle cx=%2218%22 cy=%2224%22 r=%221.6%22 opacity=%22.7%22/%3E%3Ccircle cx=%2230%22 cy=%2212%22 r=%221.1%22 opacity=%22.5%22/%3E%3Ccircle cx=%2284%22 cy=%2262%22 r=%221.4%22 opacity=%22.6%22/%3E%3Ccircle cx=%2222%22 cy=%2280%22 r=%221.3%22 opacity=%22.5%22/%3E%3Ccircle cx=%2270%22 cy=%2286%22 r=%221%22 opacity=%22.5%22/%3E%3C/g%3E%0A%3Cg transform=%22rotate(-24 50 54)%22%3E%3Cellipse cx=%2250%22 cy=%2254%22 rx=%2241%22 ry=%2212.5%22 fill=%22none%22 stroke=%22%23fff%22 stroke-opacity=%22.45%22 stroke-width=%224.2%22/%3E%3C/g%3E%0A%3Ccircle cx=%2250%22 cy=%2254%22 r=%2220%22 fill=%22url(%23pl)%22/%3E%0A%3Cg transform=%22rotate(-24 50 54)%22%3E%3Cpath d=%22M9 54A41 12.5 0 0 0 91 54%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%224.6%22 stroke-linecap=%22round%22/%3E%3C/g%3E%0A%3Cpath d=%22M77 14l2.6 6.4 6.4 2.6-6.4 2.6L77 32l-2.6-6.4L68 23l6.4-2.6z%22 fill=%22%237EF0C9%22/%3E%0A%3C/svg%3E">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Planniit">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2F3E6E"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="description" content="Planniit is a 90-day planner for your time, your skills and your money.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#15173A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="description" content="Planniit is a 90-day planner for your time, your skills and your money.">
 <title>Planniit: Your 90-Day Planner</title>
 <style>
-:root{--ink:#332f29;--muted:#817969;--paper:#F6F7FB;--panel:#fffefa;--line:#e9e2d6;--sand:#eee8dc;--gold:#9b8055;--green:#657b64;--red:#a66b5e;--shadow:0 10px 30px #4a3d2610}
+:root{--ink:#332f29;--muted:#817969;--paper:#F8F6FC;--panel:#fffefa;--line:#e9e2d6;--sand:#eee8dc;--gold:#9b8055;--green:#657b64;--red:#a66b5e;--shadow:0 10px 30px #4a3d2610}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}
 .shell{max-width:1120px;margin:auto;padding:24px}
-.hero{background:var(--sand);border:1px solid #DCE3F1;border-radius:22px;padding:30px}
+.hero{background:var(--sand);border:1px solid #E2DEF2;border-radius:22px;padding:30px}
 .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#77684f;font-weight:700}
 .hero h1{font-family:Georgia,serif;font-size:clamp(30px,5vw,48px);line-height:1.08;letter-spacing:-.03em;margin:10px 0}
 .hero p{color:#756b5c;max-width:650px;margin:0}
@@ -34,7 +35,7 @@ input:focus,textarea:focus,select:focus{border-color:var(--gold);box-shadow:0 0 
 textarea{resize:vertical;min-height:88px}.field{margin:12px 0}
 .invalid{border-color:var(--red)!important;box-shadow:0 0 0 3px #a66b5e22!important}
 .btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:10px 14px}
-.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}.btn.soft{background:var(--sand);border-color:#DCE3F1}.btn.danger{color:var(--red)}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}.btn.soft{background:var(--sand);border-color:#E2DEF2}.btn.danger{color:var(--red)}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .help{background:none;border:0;color:var(--gold);font-size:13px;padding:5px 0 0;font-weight:600}.help:hover{text-decoration:underline}
 .stepper{display:flex;gap:6px}.stepper input{text-align:center;-moz-appearance:textfield}
@@ -42,26 +43,26 @@ textarea{resize:vertical;min-height:88px}.field{margin:12px 0}
 .stepper button{flex:0 0 44px;border:1px solid var(--line);background:var(--sand);border-radius:10px;font-size:20px;line-height:1;color:var(--ink)}
 .msg{display:none;margin-top:12px;padding:10px 12px;border-radius:10px;font-size:13px}
 .msg.err{background:#f6e7e3;color:#7A4A3C;border:1px solid #e7c9c1}.msg.ok{background:#e8efe6;color:#4d6350;border:1px solid #cddbc9}
-.progress{height:9px;background:#E3E8F4;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:var(--gold);border-radius:99px;width:0}
+.progress{height:9px;background:#E6E2F3;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:var(--gold);border-radius:99px;width:0}
 .task{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border:0}
 .task input[type=checkbox]{width:18px;height:18px;accent-color:var(--green);margin-top:11px;flex:none}.task .tasktext{flex:1;min-width:0}
 .task.done .tasktext input{text-decoration:line-through;color:#9a9388}
-.pill{display:inline-block;border-radius:99px;background:#E9EEF8;color:#77684f;padding:4px 10px;font-size:11px;white-space:nowrap}
-.notice{background:#EEF1F8;border-radius:12px;padding:14px;color:#716957}
+.pill{display:inline-block;border-radius:99px;background:#ECE9F8;color:#77684f;padding:4px 10px;font-size:11px;white-space:nowrap}
+.notice{background:#F0EDFA;border-radius:12px;padding:14px;color:#716957}
 .tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:550px}
 th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}
 th{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .empty{color:var(--muted);padding:18px;text-align:center}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:6px}
-.step{background:#EEF1F8;border-radius:13px;padding:14px;text-align:left;border:1px solid var(--line);color:var(--ink)}
+.step{background:#F0EDFA;border-radius:13px;padding:14px;text-align:left;border:1px solid var(--line);color:var(--ink)}
 .step b{display:block;font:20px Georgia,serif;color:var(--gold)}.step span{font-size:13px;color:#6f6554}
-.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:8px 0 4px}.tile{background:#EEF1F8;border-radius:12px;padding:12px}.tile b{display:block;font:24px Georgia,serif}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:8px 0 4px}.tile{background:#F0EDFA;border-radius:12px;padding:12px}.tile b{display:block;font:24px Georgia,serif}
 .footer{border-top:1px solid var(--line);padding:22px 0 5px;color:var(--muted);font:20px Georgia,serif}
 .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:99px;display:none;z-index:30;max-width:90vw}
 .overlay{position:fixed;inset:0;background:#2a251d66;display:none;align-items:center;justify-content:center;padding:16px;z-index:20}
 .overlay.show{display:flex}.modal{background:var(--panel);border-radius:18px;padding:22px;max-width:520px;width:100%;box-shadow:0 20px 50px #0003}
 .modal h3{font:22px Georgia,serif;margin:0 0 4px}
-.modal{max-height:90vh;overflow:auto}.chips{display:flex;flex-direction:column;gap:6px;margin:6px 0 14px}.chip{text-align:left;border:1px solid var(--line);background:#EEF1F8;border-radius:10px;padding:9px 12px;font-size:13px;color:var(--ink)}.chip:hover{border-color:var(--gold)}
+.modal{max-height:90vh;overflow:auto}.chips{display:flex;flex-direction:column;gap:6px;margin:6px 0 14px}.chip{text-align:left;border:1px solid var(--line);background:#F0EDFA;border-radius:10px;padding:9px 12px;font-size:13px;color:var(--ink)}.chip:hover{border-color:var(--gold)}
 .lock{position:fixed;inset:0;background:var(--paper);display:flex;align-items:center;justify-content:center;padding:20px;z-index:50;overflow:auto}
 .lockbox{max-width:420px;width:100%;text-align:center}.lockbox h1{font:46px Georgia,serif;letter-spacing:-.03em;margin:6px 0 8px}
 .lockbox input{text-align:center;letter-spacing:.08em;font-size:17px;text-transform:uppercase}
@@ -70,15 +71,15 @@ input,textarea,select{font-size:16px}.btn{min-height:44px}
 .btn:focus-visible,.tab:focus-visible,.chip:focus-visible,.help:focus-visible,.step:focus-visible,.subtab:focus-visible,.check:focus-visible{outline:3px solid #9b805566;outline-offset:2px}
 .subtabs{display:flex;gap:6px;margin:0 0 14px;flex-wrap:wrap}.subtab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:10px 16px;min-height:44px}.subtab.active{background:var(--ink);border-color:var(--ink);color:#fff}
 .subpanel{display:none}.subpanel.active{display:block}
-.check{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#EEF1F8;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);margin:6px 0}
+.check{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#F0EDFA;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);margin:6px 0}
 .check .dot{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid #cfc6b4;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff}
 .check.done{background:#eef2ec}.check.done .dot{background:var(--green);border-color:var(--green)}.check.done .t{color:#8d8778}
 .check .t{flex:1;font-weight:600}.check small{display:block;color:var(--muted);font-size:12px;font-weight:400}
-.bar{height:8px;background:#E3E8F4;border-radius:99px;overflow:hidden;margin:4px 0 12px}.bar span{display:block;height:100%;background:var(--gold)}
+.bar{height:8px;background:#E6E2F3;border-radius:99px;overflow:hidden;margin:4px 0 12px}.bar span{display:block;height:100%;background:var(--gold)}
 .exp{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.exp:last-child{border:0}.exp .x{background:none;border:0;color:var(--red);font-size:18px;padding:6px 10px;min-height:44px}
 .list{margin:6px 0 0;padding-left:20px}.list li{margin:5px 0}
 @media print{.tabs,.hero,.footer,#dataCard,.toast,.overlay,.actions,#progPeriodBox,#monthBanner{display:none!important}.view{display:none!important}.view.active{display:block!important}.shell{padding:0}.card{box-shadow:none}}
-.calcgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.res{background:#EEF1F8;border-radius:12px;padding:14px;font-size:14px;line-height:1.6}.res b{font-family:Georgia,serif;font-size:17px;color:var(--gold)}
+.calcgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.res{background:#F0EDFA;border-radius:12px;padding:14px;font-size:14px;line-height:1.6}.res b{font-family:Georgia,serif;font-size:17px;color:var(--gold)}
 @media(max-width:760px){.shell{padding:14px}.hero{padding:22px}.span-3,.span-4,.span-5,.span-6,.span-7{grid-column:span 12}.head{align-items:start;flex-direction:column}.metric{font-size:30px}.steps,.tiles{grid-template-columns:1fr 1fr}.calcgrid{grid-template-columns:1fr}}
 html.big body{zoom:1.2}
 .small{font-size:14px}.label{font-size:12.5px;letter-spacing:.06em}.tab{font-size:15px}.btn{font-size:16px}
@@ -86,64 +87,120 @@ html.big body{zoom:1.2}
 .quote{border-left:3px solid var(--gold);padding:4px 0 4px 14px;margin:0 0 14px}.quote p{margin:0 0 4px;font:18px/1.45 Georgia,serif}
 
 /* ---------- Planniit brand: bold, bright, easy to trust ---------- */
-:root{--ink:#1F2A44;--muted:#5E6B86;--paper:#F6F7FB;--panel:#fff;--line:#DCE3F1;--sand:#E9EEF8;--gold:#3F5A9E;--coral:#D9825B;--sun:#E6B450;--green:#12A47A;--red:#E5484D;--shadow:0 14px 34px #2a3a6a1a}
-body{background:radial-gradient(1100px 480px at 90% -8%,#dfe6f5 0,transparent 62%),var(--paper)}
-.hero{background:linear-gradient(135deg,#22305A 0%,#3F5A9E 100%);border:0;color:#fff;box-shadow:0 22px 50px #2f3e6e33;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,#E6B45077,transparent 70%);pointer-events:none}
+:root{--ink:#1A1B3D;--muted:#626587;--paper:#F8F6FC;--panel:#fff;--line:#E2DEF2;--sand:#ECE9F8;--gold:#4A44B8;--coral:#F0806C;--sun:#F5B942;--green:#2FBF93;--red:#E5484D;--shadow:0 14px 34px #2a3a6a1a}
+body{background:radial-gradient(1100px 480px at 90% -8%,#e3def5 0,transparent 62%),var(--paper)}
+.hero{background:linear-gradient(135deg,#15173A 0%,#4A44B8 100%);border:0;color:#fff;box-shadow:0 22px 50px #231F5C33;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,#F5B94277,transparent 70%);pointer-events:none}
 .hero h1{font-family:ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.045em;color:#fff}
-.hero p,.hero .commit label,.hero .commit .hint{color:#E6ECF8}.hero .eyebrow{color:#F2D9A6}.hero .help{color:#F2D9A6}
+.hero p,.hero .commit label,.hero .commit .hint{color:#E9E6F8}.hero .eyebrow{color:#F2D9A6}.hero .help{color:#F2D9A6}
 .hero .commit input{background:#fff;border-color:transparent;color:var(--ink)}
 .eyebrow{color:var(--gold)}
-.tabs{background:#F6F7FB}.tab{border-radius:14px;font-weight:600;color:#44506F}
-.tab.active,.subtab.active{background:#3F5A9E;border-color:transparent;color:#fff;box-shadow:0 8px 18px #3F5A9E4d}
+.tabs{background:#F8F6FC}.tab{border-radius:14px;font-weight:600;color:#46486B}
+.tab.active,.subtab.active{background:#4A44B8;border-color:transparent;color:#fff;box-shadow:0 8px 18px #4A44B84d}
 .btn{border-radius:12px;font-weight:600}
-.btn.primary{background:#3F5A9E;border:0;color:#fff;box-shadow:0 8px 20px #3F5A9E44}
-.btn.soft{background:var(--sand);border-color:var(--line);color:#34508F}
+.btn.primary{background:#4A44B8;border:0;color:#fff;box-shadow:0 8px 20px #4A44B844}
+.btn.soft{background:var(--sand);border-color:var(--line);color:#3B36A0}
 .card{border-radius:20px}
 .head h2,.modal h3,.lockbox h1,.metric,.tile b{font-family:ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em}
-.tile{background:#EEF1F8}.notice{background:#EEF1F8;color:#44506F;border:1px solid #DCE3F1}.pill{background:#E9EEF8;color:#34508F}.chip{background:#EEF1F8}
-.progress,.bar{background:#E3E8F4}.progress span,.bar span{background:linear-gradient(90deg,#3F5A9E,#5F7BC0)}
+.tile{background:#F0EDFA}.notice{background:#F0EDFA;color:#46486B;border:1px solid #E2DEF2}.pill{background:#ECE9F8;color:#3B36A0}.chip{background:#F0EDFA}
+.progress,.bar{background:#E6E2F3}.progress span,.bar span{background:linear-gradient(90deg,#4A44B8,#8279E0)}
 .msg.err{background:#FFE9E7;color:#9A2B2B;border-color:#FFC9C4}.msg.ok{background:#E3F8F0;color:#0B6B4F;border-color:#BDEBD9}
 .stepper button{background:var(--sand)}
-input:focus,textarea:focus,select:focus{border-color:#3F5A9E;box-shadow:0 0 0 3px #3F5A9E2a}
-a{color:#34508F}.quote{border-left-color:#D9825B}
-.lock{background:linear-gradient(160deg,#22305A,#3F5A9E);color:#fff}
+input:focus,textarea:focus,select:focus{border-color:#4A44B8;box-shadow:0 0 0 3px #4A44B82a}
+a{color:#3B36A0}.quote{border-left-color:#F0806C}
+.lock{background:linear-gradient(160deg,#15173A,#4A44B8);color:#fff}
 .lockbox,.lockbox p,.lockbox .small,.lockbox .sub{color:#EAF0FA}.lockbox h1{color:#fff}.lockbox a{color:#F2D9A6}.lockbox .eyebrow{color:#F2D9A6}
-.lockbox input{background:#fff;color:var(--ink);border-color:transparent}.lockbox .card,.lockbox .card p,.lockbox .card .label{color:#1F2A44}.lockbox .card .small,.lockbox .card .msg{color:#44506F}.lockbox .card a{color:#34508F;font-weight:600}.lockbox .card input{border:1px solid #C9D3E8}.lock .btn.primary{background:#3F5A9E;color:#fff}
-.trust{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}.trust span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;color:#34508F;font-weight:600}
+.lockbox input{background:#fff;color:var(--ink);border-color:transparent}.lockbox .card,.lockbox .card p,.lockbox .card .label{color:#1A1B3D}.lockbox .card .small,.lockbox .card .msg{color:#46486B}.lockbox .card a{color:#3B36A0;font-weight:600}.lockbox .card input{border:1px solid #D3CEEA}.lock .btn.primary{background:#4A44B8;color:#fff}
+.trust{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}.trust span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;color:#3B36A0;font-weight:600}
 .score{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.ring{position:relative;width:96px;height:96px;flex:0 0 96px}.ring svg{transform:rotate(-90deg)}.ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 28px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif}
 .streak{text-align:center;background:linear-gradient(135deg,#FBF1DE,#F7E4DC);border-radius:16px;padding:12px 18px}.streak b{display:block;font:800 30px/1 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;color:#B5532F}.streak span{font-size:12px;color:#7A4A3C}
-.jmap{display:grid;grid-template-columns:repeat(15,1fr);gap:6px;margin:8px 0}.jd{aspect-ratio:1;border-radius:50%;background:#E3E8F4}.jd.p{background:#5F7BC0}.jd.w{background:linear-gradient(135deg,#E6B450,#D9825B)}.jd.m{background:#F4F6FB;border:2px dashed #C9D3E8}.jd.t{outline:3px solid #1F2A44;outline-offset:1px}
+.jmap{display:grid;grid-template-columns:repeat(15,1fr);gap:6px;margin:8px 0}.jd{aspect-ratio:1;border-radius:50%;background:#E6E2F3}.jd.p{background:#8279E0}.jd.w{background:linear-gradient(135deg,#F5B942,#F0806C)}.jd.m{background:#F4F6FB;border:2px dashed #D3CEEA}.jd.t{outline:3px solid #1A1B3D;outline-offset:1px}
 .legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)}.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .confetti{position:fixed;top:-12px;width:10px;height:14px;z-index:99;pointer-events:none;animation:fall 2.4s ease-in forwards}
 @keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:.9}}
-.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.wd{border-radius:12px;padding:8px 2px;text-align:center;background:#EEF1F8;color:#5E6B86;font-size:12px;min-width:0}.wd b{display:block;font-size:18px;color:#1F2A44}.wd i{display:block;font-style:normal;font-size:10.5px;min-height:14px}
-.wd.w{background:#DDF1E6;color:#1F6B50}.wd.p{background:#DCE6F7;color:#34508F}.wd.m,.wd.x{background:#EEF1F8;color:#5E6B86}.wd.n{background:#FFF4DC;color:#8A6420}.wd.t{outline:2px solid #1F2A44}
-.jmap{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin:10px 0}.jd{aspect-ratio:1;border-radius:8px;background:#EEF1F8;color:#8A94AB;display:flex;align-items:center;justify-content:center;font-size:11px;border:0}.jd.p{background:#CBD8F2;color:#2F3E6E}.jd.w{background:#BFE5D3;color:#1F6B50}.jd.m,.jd.x{background:#EEF1F8;color:#8A94AB;border:0}.jd.t{outline:2px solid #1F2A44;outline-offset:1px;font-weight:700}
-.all90{margin-top:12px}.all90 summary{cursor:pointer;color:#34508F;font-weight:600;padding:6px 0}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.wd{border-radius:12px;padding:8px 2px;text-align:center;background:#F0EDFA;color:#626587;font-size:12px;min-width:0}.wd b{display:block;font-size:18px;color:#1A1B3D}.wd i{display:block;font-style:normal;font-size:10.5px;min-height:14px}
+.wd.w{background:#DDF1E6;color:#1F6B50}.wd.p{background:#E2DEF7;color:#3B36A0}.wd.m,.wd.x{background:#F0EDFA;color:#626587}.wd.n{background:#FFF4DC;color:#8A6420}.wd.t{outline:2px solid #1A1B3D}
+.jmap{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin:10px 0}.jd{aspect-ratio:1;border-radius:8px;background:#F0EDFA;color:#8F91AE;display:flex;align-items:center;justify-content:center;font-size:11px;border:0}.jd.p{background:#D5D0F0;color:#231F5C}.jd.w{background:#BFE5D3;color:#1F6B50}.jd.m,.jd.x{background:#F0EDFA;color:#8F91AE;border:0}.jd.t{outline:2px solid #1A1B3D;outline-offset:1px;font-weight:700}
+.all90{margin-top:12px}.all90 summary{cursor:pointer;color:#3B36A0;font-weight:600;padding:6px 0}
 
 /* ---------- simple layout: slim top bar, bottom tabs ---------- */
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 2px 6px}.top b{font:800 24px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;letter-spacing:-.04em;color:#22305A}.top span{font-size:12.5px;color:#5E6B86}
+
 .shell{padding-bottom:110px}
-.bnav{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid #DCE3F1;justify-content:center;gap:2px;padding:6px 8px calc(6px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px #2a3a6a14}
+.bnav{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid #E2DEF2;justify-content:center;gap:2px;padding:6px 8px calc(6px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px #2a3a6a14}
 body.unlocked .bnav{display:flex}
-.bnav button{flex:1;max-width:130px;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:7px 2px;font-size:12px;line-height:1.1;color:#5E6B86;font-weight:600;border-radius:14px;min-height:56px;cursor:pointer}
+.bnav button{flex:1;max-width:130px;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:7px 2px;font-size:12px;line-height:1.1;color:#626587;font-weight:600;border-radius:14px;min-height:56px;cursor:pointer}
 .bnav svg{width:25px;height:25px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.bnav button.active{color:#3F5A9E;background:#EEF1F8}
-.seg{display:flex;gap:4px;background:#E9EEF8;border-radius:14px;padding:4px;margin:2px 0 14px}.seg button{flex:1;border:0;background:transparent;border-radius:11px;padding:11px 6px;font-weight:600;color:#44506F;font-size:15.5px;cursor:pointer}.seg button.active{background:#fff;color:#22305A;box-shadow:0 2px 8px #2a3a6a1f}
-.greet{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,#22305A,#3F5A9E);color:#fff;border-radius:20px;padding:20px 22px;margin:6px 0 14px}.greet h2{font:800 28px/1.15 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;margin:8px 0 4px;color:#fff;letter-spacing:-.03em}.greet .pill{background:#ffffff26;color:#fff}.greet p{color:#E6ECF8;margin:0;max-width:520px;font-size:15px}.greet .btn.primary{background:#fff;color:#22305A;box-shadow:none}
-.menu{display:flex;flex-direction:column;gap:10px;max-width:640px}.menu button{display:flex;align-items:center;gap:14px;text-align:left;width:100%;background:#fff;border:1px solid #DCE3F1;border-radius:16px;padding:16px;font-size:16.5px;color:#1F2A44;cursor:pointer}.menu b{display:block}.menu span{display:block;font-size:14px;color:#5E6B86;font-weight:400;margin-top:2px}.menu svg{flex:0 0 26px}
-.back{background:none;border:0;color:#34508F;font-weight:600;font-size:15.5px;padding:8px 0 4px;cursor:pointer}
+.bnav button.active{color:#4A44B8;background:#F0EDFA}
+.seg{display:flex;gap:4px;background:#ECE9F8;border-radius:14px;padding:4px;margin:2px 0 14px}.seg button{flex:1;border:0;background:transparent;border-radius:11px;padding:11px 6px;font-weight:600;color:#46486B;font-size:15.5px;cursor:pointer}.seg button.active{background:#fff;color:#15173A;box-shadow:0 2px 8px #2a3a6a1f}
+.greet{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,#15173A,#4A44B8);color:#fff;border-radius:20px;padding:20px 22px;margin:6px 0 14px}.greet h2{font:800 28px/1.15 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;margin:8px 0 4px;color:#fff;letter-spacing:-.03em}.greet .pill{background:#ffffff26;color:#fff}.greet p{color:#E9E6F8;margin:0;max-width:520px;font-size:15px}.greet .btn.primary{background:#fff;color:#15173A;box-shadow:none}
+.menu{display:flex;flex-direction:column;gap:10px;max-width:640px}.menu button{display:flex;align-items:center;gap:14px;text-align:left;width:100%;background:#fff;border:1px solid #E2DEF2;border-radius:16px;padding:16px;font-size:16.5px;color:#1A1B3D;cursor:pointer}.menu b{display:block}.menu span{display:block;font-size:14px;color:#626587;font-weight:400;margin-top:2px}.menu svg{flex:0 0 26px}
+.back{background:none;border:0;color:#3B36A0;font-weight:600;font-size:15.5px;padding:8px 0 4px;cursor:pointer}
 .view{padding-top:10px}
-@media(max-width:560px){.top span{display:none}.greet{padding:18px}}
+@media(max-width:560px){.greet{padding:18px}}
 #todayBanner{display:none!important}
 @media print{.bnav,.top,.back{display:none!important}}
+
+/* ================= Midnight & Gold ================= */
+body{background:radial-gradient(900px 420px at 100% -6%,#e6e0fb 0,transparent 60%),radial-gradient(700px 380px at -10% 30%,#fdf0dc 0,transparent 60%),#F8F6FC}
+.wm{font-family:ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.045em;color:#15173A;display:inline-flex;align-items:baseline;line-height:1}
+.wm .ii{display:inline-flex;gap:.07em;margin:0 .02em 0 .05em}
+.wm .ii b{display:inline-block;width:.13em;height:.5em;border-radius:.07em;background:currentColor;position:relative}
+.wm .ii b::before{content:"";position:absolute;left:50%;top:-.24em;width:.19em;height:.19em;margin-left:-.095em;border-radius:50%;background:#F5B942}
+.wm .ii b+b::before{background:#2FBF93}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 2px 10px}.top .brand{display:inline-flex;align-items:center;gap:10px}.top .brand img{border-radius:9px;display:block;box-shadow:0 4px 12px #15173a33}.top .wm{font-size:26px}
+.hud{display:inline-flex;align-items:center;gap:9px;background:#15173A;color:#fff;border:0;border-radius:999px;padding:5px 12px 5px 5px;cursor:pointer;box-shadow:0 6px 16px #15173a38;font:inherit}
+.hud .hlv{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#FFD98A,#F0806C);color:#15173A;font:800 15px/30px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;text-align:center}
+.hud .hmid{display:flex;flex-direction:column;gap:4px;min-width:64px}.hud .hname{font-size:11.5px;font-weight:700;letter-spacing:.02em;line-height:1;color:#E9E6F8}
+.hud .hbar{display:block;height:5px;border-radius:3px;background:#ffffff2e;overflow:hidden}.hud .hbar i{display:block;height:100%;width:0;background:#F5B942;border-radius:3px;transition:width .6s}
+.hud .hfl{display:inline-flex;align-items:center;gap:3px;font-weight:800;font-size:13.5px}
+.lock{background:radial-gradient(1px 1px at 12% 18%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 82% 12%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 70% 78%,#ffffffcc 50%,transparent 51%),radial-gradient(1.5px 1.5px at 24% 84%,#ffffffaa 50%,transparent 51%),radial-gradient(1px 1px at 92% 46%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 6% 52%,#ffffffbb 50%,transparent 51%),radial-gradient(700px 420px at 80% 0%,#5a4fd155,transparent 70%),linear-gradient(165deg,#15173A,#2B2680 120%)}
+.lockmark{border-radius:22px;box-shadow:0 14px 34px #0006;margin:0 auto 10px;display:block}
+.lockbox h1.wm{font-size:58px;display:inline-flex;color:#fff;margin:4px 0 8px;font-family:ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif}.lockbox .eyebrow{margin:0 0 18px;letter-spacing:.14em}
+.greet{background:radial-gradient(1.2px 1.2px at 12% 22%,#fff 50%,transparent 51%),radial-gradient(1.6px 1.6px at 78% 16%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 90% 70%,#ffffffcc 50%,transparent 51%),radial-gradient(1px 1px at 46% 84%,#ffffff99 50%,transparent 51%),radial-gradient(260px 200px at 100% 0%,#F5B94238,transparent 70%),linear-gradient(135deg,#15173A,#2E2A86);box-shadow:0 18px 40px #15173a33}
+.greet h2{font-size:30px}.greet .btn.primary{background:linear-gradient(135deg,#FFD98A,#F5B942);color:#15173A;font-weight:800;box-shadow:0 8px 20px #f5b94255}
+.btn.primary{background:linear-gradient(135deg,#5A54D6,#3B36A0);box-shadow:0 8px 20px #4A44B855}.btn{transition:transform .12s}.btn:active{transform:scale(.97)}
+.card{border-radius:20px;border:1px solid #E6E2F3;box-shadow:0 10px 30px #2b268014}
+/* player card */
+.player{background:linear-gradient(160deg,#17193F,#2B2680);color:#fff;border:0;position:relative;overflow:hidden}
+.player::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,#F5B94240,transparent 70%);pointer-events:none}
+.player .label,.player .small{color:#BDB8EC}.player p{color:#E4E1F8}
+.pl-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap;position:relative;z-index:1}
+.planet{position:relative;width:96px;height:96px;flex:0 0 96px}.planet svg{transform:rotate(-90deg);width:96px;height:96px}.planet div{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}.planet small{font-size:10px;letter-spacing:.14em;color:#BDB8EC;font-weight:700}.planet b{font:800 34px/1.05 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;color:#fff}
+.pl-info{flex:1;min-width:170px}.pl-rank{font:800 24px/1.1 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;letter-spacing:-.02em}.xpbar{height:10px;border-radius:6px;background:#ffffff26;margin:9px 0 5px;overflow:hidden}.xpbar span{display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#F5B942,#F0806C);transition:width .7s}.pl-xp{font-size:13.5px;color:#D6D2F5}
+.player .streak{display:inline-flex;align-items:center;gap:6px;background:#ffffff1a;border-radius:999px;padding:5px 12px;margin-top:10px;text-align:left}.player .streak b{display:inline;font:800 16px/1 ui-rounded,"Segoe UI",system-ui,sans-serif;color:#FFD98A}.player .streak span{color:#E4E1F8;font-size:13.5px}
+.qhead{display:flex;justify-content:space-between;align-items:baseline;margin:20px 0 8px;position:relative;z-index:1}.qscore{font-size:13.5px;color:#D6D2F5}.qscore b{font:800 20px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;color:#FFD98A}
+#quests{display:flex;flex-direction:column;gap:7px;position:relative;z-index:1}
+.q{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:0;border-radius:14px;padding:12px 14px;background:#ffffff14;color:#fff;font-size:15.5px;cursor:pointer}.q span.t{flex:1}.q .xp{font-weight:800;font-size:13px;border-radius:999px;padding:4px 10px;background:#ffffff1f;color:#FFD98A;white-space:nowrap}.q .go{opacity:.6;font-size:18px}
+.q.done{background:linear-gradient(135deg,#2FBF9333,#2FBF9314);cursor:default}.q.done .xp{background:#2FBF93;color:#0E2B22}.q.done .ck{width:22px;height:22px;border-radius:50%;background:#2FBF93;display:flex;align-items:center;justify-content:center;flex:0 0 22px}.q.done .ck svg{width:13px;height:13px;stroke:#0E2B22;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.q .nm{width:22px;flex:0 0 22px;text-align:center;font-weight:800;color:#8F8AD8;font-size:15px}
+.qmsg{margin:12px 2px 0;font-weight:700;color:#FFD98A;position:relative;z-index:1}
+.worldrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px;position:relative;z-index:1}.world{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#15173A;background:linear-gradient(135deg,#FFD98A,#F5B942);padding:4px 10px;border-radius:999px}
+.player .bar{background:#ffffff26}.player .bar span{background:linear-gradient(90deg,#F5B942,#F0806C)}
+.player .wd{background:#ffffff14;color:#BDB8EC}.player .wd b{color:#fff}.player .wd.w{background:#2FBF9340;color:#BFF5E1}.player .wd.p{background:#8279E044;color:#E4E1F8}.player .wd.n{background:#F5B94233;color:#FFD98A}.player .wd.t{outline:2px solid #FFD98A}
+.player details summary{color:#D6D2F5}.player .legend{color:#D6D2F5}.player .jd{background:#ffffff14;color:#8F8AD8}.player .jd.p{background:#8279E0;color:#fff}.player .jd.w{color:#15173A}.player .jd.t{outline:2px solid #FFD98A}.player .jd.m,.player .jd.x{background:#ffffff0d;color:#6F6BB0}
+/* badges */
+.badges{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:10px}@media(min-width:700px){.badges{grid-template-columns:repeat(4,1fr)}}
+.bd{border-radius:18px;padding:16px 10px 14px;text-align:center;background:#F0EDFA;border:1px solid #E2DEF2}.bd .ic{width:60px;height:60px;border-radius:50%;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;background:#DAD6EE;color:#fff}.bd svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.bd b{display:block;font-size:14.5px}.bd span{display:block;font-size:12.5px;color:#626587;margin-top:3px}
+.bd.on{background:linear-gradient(160deg,#fffaf0,#fff0d8);border-color:#F2D9A6}.bd.on .ic{background:linear-gradient(135deg,#17193F,#2B2680);color:#FFD98A;box-shadow:0 8px 18px #2b268044}.bd.off{opacity:.78}
+/* level-up */
+.lvmodal{background:radial-gradient(240px 160px at 50% 0%,#F5B94244,transparent 70%),linear-gradient(165deg,#15173A,#2B2680);color:#fff;text-align:center;padding:30px 22px;animation:pop .45s cubic-bezier(.2,1.4,.4,1)}
+.lvmodal h3{font-size:30px!important;color:#fff;margin:4px 0}.lvmodal p{color:#D6D2F5;margin:0 0 18px}.lvkick{font-size:12px;letter-spacing:.22em;font-weight:800;color:#FFD98A}
+.lvicon{width:96px;height:96px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,#FFD98A,#F0806C);display:flex;align-items:center;justify-content:center;color:#15173A;box-shadow:0 0 0 10px #ffffff14,0 0 40px #F5B94277}.lvicon b{font:800 44px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif}.lvicon svg{width:46px;height:46px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.lvmodal .btn:not(.primary){background:#ffffff1c;color:#fff;border-color:#ffffff33}.lvmodal .btn.primary{background:linear-gradient(135deg,#FFD98A,#F5B942);color:#15173A;box-shadow:none}
+@keyframes pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
+.xppop{position:fixed;left:50%;top:74px;transform:translateX(-50%);z-index:60;background:linear-gradient(135deg,#FFD98A,#F5B942);color:#15173A;font:800 17px ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif;padding:9px 18px;border-radius:999px;box-shadow:0 10px 26px #15173a44;pointer-events:none;opacity:0}
+.xppop.go{animation:xpup 1.7s ease-out forwards}@keyframes xpup{0%{opacity:0;transform:translate(-50%,12px) scale(.8)}15%{opacity:1;transform:translate(-50%,0) scale(1.05)}75%{opacity:1}100%{opacity:0;transform:translate(-50%,-26px)}}
+.bnav button.active{background:#ECE9F8;color:#4A44B8}
+@media(max-width:560px){.top .wm{font-size:23px}.hud .hmid{min-width:52px}}
+.wd i{font-size:10px;font-style:normal;letter-spacing:-.01em}
+@media print{.hud,.xppop{display:none!important}}
 </style></head>
 <body>
 <div class="lock" id="lockScreen">
   <div class="lockbox">
-    <div class="eyebrow">Your 90-day planner</div>
-    <h1>Planniit</h1>
+    <img class="lockmark" src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cdefs%3E%0A%3ClinearGradient id=%22bg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%233A33A0%22/%3E%3Cstop offset=%221%22 stop-color=%22%2312143A%22/%3E%3C/linearGradient%3E%0A%3ClinearGradient id=%22pl%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23FFD98A%22/%3E%3Cstop offset=%221%22 stop-color=%22%23F0806C%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23bg)%22/%3E%0A%3Cg fill=%22%23fff%22%3E%3Ccircle cx=%2218%22 cy=%2224%22 r=%221.6%22 opacity=%22.7%22/%3E%3Ccircle cx=%2230%22 cy=%2212%22 r=%221.1%22 opacity=%22.5%22/%3E%3Ccircle cx=%2284%22 cy=%2262%22 r=%221.4%22 opacity=%22.6%22/%3E%3Ccircle cx=%2222%22 cy=%2280%22 r=%221.3%22 opacity=%22.5%22/%3E%3Ccircle cx=%2270%22 cy=%2286%22 r=%221%22 opacity=%22.5%22/%3E%3C/g%3E%0A%3Cg transform=%22rotate(-24 50 54)%22%3E%3Cellipse cx=%2250%22 cy=%2254%22 rx=%2241%22 ry=%2212.5%22 fill=%22none%22 stroke=%22%23fff%22 stroke-opacity=%22.45%22 stroke-width=%224.2%22/%3E%3C/g%3E%0A%3Ccircle cx=%2250%22 cy=%2254%22 r=%2220%22 fill=%22url(%23pl)%22/%3E%0A%3Cg transform=%22rotate(-24 50 54)%22%3E%3Cpath d=%22M9 54A41 12.5 0 0 0 91 54%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%224.6%22 stroke-linecap=%22round%22/%3E%3C/g%3E%0A%3Cpath d=%22M77 14l2.6 6.4 6.4 2.6-6.4 2.6L77 32l-2.6-6.4L68 23l6.4-2.6z%22 fill=%22%237EF0C9%22/%3E%0A%3C/svg%3E" alt="" width="84" height="84">
+    <h1 class="wm">Plann<span class="ii"><b></b><b></b></span>t</h1>
+    <div class="eyebrow">Your 90-day adventure</div>
     <p class="small" style="font-size:14px;margin:0 0 18px">Enter the access code you received after your purchase. You only need to do this once on each device.</p>
     <div class="card" style="text-align:left">
       <label class="label" for="lockCode">Your access code</label>
@@ -157,7 +214,7 @@ body.unlocked .bnav{display:flex}
 </div>
 <main class="shell">
 
-<header class="top"><b>Planniit</b><span>Plan your time · Learn something new · Track your money</span></header>
+<header class="top"><span class="brand"><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cdefs%3E%0A%3ClinearGradient id=%22bg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%233A33A0%22/%3E%3Cstop offset=%221%22 stop-color=%22%2312143A%22/%3E%3C/linearGradient%3E%0A%3ClinearGradient id=%22pl%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23FFD98A%22/%3E%3Cstop offset=%221%22 stop-color=%22%23F0806C%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23bg)%22/%3E%0A%3Cg fill=%22%23fff%22%3E%3Ccircle cx=%2218%22 cy=%2224%22 r=%221.6%22 opacity=%22.7%22/%3E%3Ccircle cx=%2230%22 cy=%2212%22 r=%221.1%22 opacity=%22.5%22/%3E%3Ccircle cx=%2284%22 cy=%2262%22 r=%221.4%22 opacity=%22.6%22/%3E%3Ccircle cx=%2222%22 cy=%2280%22 r=%221.3%22 opacity=%22.5%22/%3E%3Ccircle cx=%2270%22 cy=%2286%22 r=%221%22 opacity=%22.5%22/%3E%3C/g%3E%0A%3Cg transform=%22rotate(-24 50 54)%22%3E%3Cellipse cx=%2250%22 cy=%2254%22 rx=%2241%22 ry=%2212.5%22 fill=%22none%22 stroke=%22%23fff%22 stroke-opacity=%22.45%22 stroke-width=%224.2%22/%3E%3C/g%3E%0A%3Ccircle cx=%2250%22 cy=%2254%22 r=%2220%22 fill=%22url(%23pl)%22/%3E%0A%3Cg transform=%22rotate(-24 50 54)%22%3E%3Cpath d=%22M9 54A41 12.5 0 0 0 91 54%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%224.6%22 stroke-linecap=%22round%22/%3E%3C/g%3E%0A%3Cpath d=%22M77 14l2.6 6.4 6.4 2.6-6.4 2.6L77 32l-2.6-6.4L68 23l6.4-2.6z%22 fill=%22%237EF0C9%22/%3E%0A%3C/svg%3E" alt="" width="34" height="34"><span class="wm">Plann<span class="ii"><b></b><b></b></span>t</span></span><button type="button" class="hud" id="hud" data-go="badges" aria-label="My level and badges"><span class="hlv" id="hudLv">1</span><span class="hmid"><span class="hname" id="hudName">Stargazer</span><span class="hbar"><i id="hudFill"></i></span></span><span class="hfl"><svg viewBox="0 0 24 24" width="15" height="15" fill="#F5B942"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.500 1-4 2.500-5.500C9 10 10 11 11 11c0-3-1-6 1-9z"/></svg><b id="hudStreak">0</b></span></button></header>
 
 
 
@@ -167,19 +224,21 @@ body.unlocked .bnav{display:flex}
   <div class="notice" id="todayBanner" style="display:none;margin:6px 0 14px"></div>
   <div class="greet"><div><span class="pill" id="todayLabel"></span><h2 id="greetHello">Hello</h2><p id="homeCommit"></p></div><button class="btn primary" id="homeCta" data-go="daily">Plan today</button></div>
   <div class="grid">
-    <div class="card span-12" id="journeyCard">
-      <div class="score">
-        <div class="ring"><svg width="96" height="96" viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="#E3E8F4" stroke-width="10"/><circle id="ringArc" cx="48" cy="48" r="40" fill="none" stroke="#3F5A9E" stroke-width="10" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/></svg><b id="ringNum">0</b></div>
-        <div style="flex:1;min-width:210px"><div class="label">Your intention score today</div><div id="scoreMsg" style="font:800 20px/1.25 ui-rounded,"SF Pro Rounded","Segoe UI",Inter,system-ui,sans-serif"></div><p class="small" id="scoreHow" style="margin:6px 0 0"></p></div>
-        <div class="streak"><b id="streakNum">0</b><span id="streakTxt">day streak</span></div>
+    <div class="card span-12 player" id="journeyCard">
+      <div class="pl-top">
+        <div class="planet"><svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="#ffffff30" stroke-width="8"/><circle id="xpArc" cx="48" cy="48" r="40" fill="none" stroke="#F5B942" stroke-width="8" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/></svg><div><small>LEVEL</small><b id="lvNum">1</b></div></div>
+        <div class="pl-info"><div class="pl-rank" id="lvName">Stargazer</div><div class="xpbar"><span id="xpFill"></span></div><div class="pl-xp" id="xpText"></div><div class="streak"><svg viewBox="0 0 24 24" width="17" height="17" fill="#F5B942"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.500 1-4 2.500-5.500C9 10 10 11 11 11c0-3-1-6 1-9z"/></svg><b id="streakNum">0</b><span id="streakTxt">day streak</span></div></div>
       </div>
-      <div class="label" style="margin-top:18px">Your 90-day journey</div>
+      <div class="qhead"><div class="label">Today's quests</div><div class="qscore"><b id="ringNum">0</b><span>/100 points</span></div></div>
+      <div id="quests"></div>
+      <div id="scoreMsg" class="qmsg"></div>
+      <div class="worldrow"><div class="label">Your 90-day journey</div><span class="world" id="worldTag"></span></div>
       <div class="bar" style="height:12px;margin:6px 0 4px"><span id="journeyBar" style="width:0"></span></div>
       <p id="journeyText" style="margin:0 0 4px"></p>
       <div class="label" style="margin-top:14px">This week</div>
       <div class="week" id="weekStrip"></div>
       <details class="all90"><summary>See all 90 days</summary><div class="jmap" id="journeyMap"></div>
-        <div class="legend"><span><i style="background:#BFE5D3"></i>All tasks done</span><span><i style="background:#CBD8F2"></i>Planned</span><span><i style="background:#EEF1F8;border:1px solid #C9D3E8"></i>Still ahead</span></div></details>
+        <div class="legend"><span><i style="background:#BFE5D3"></i>All tasks done</span><span><i style="background:#D5D0F0"></i>Planned</span><span><i style="background:#F0EDFA;border:1px solid #D3CEEA"></i>Still ahead</span></div></details>
     </div>
     <div class="card span-12" id="startCard">
       <div class="label">Get started in 7 small steps</div>
@@ -410,7 +469,7 @@ body.unlocked .bnav{display:flex}
 
 <section class="view" id="more">
   <div class="head"><div><h2>More</h2><p class="sub">Reviews, your progress report, reminders and your saved copies.</p></div></div>
-  <div class="menu"><button type="button" data-go="review"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg><div><b>This week</b><span>Look back and plan next week</span></div></button><button type="button" data-go="monthly"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H5zM5 9h14"/></svg><div><b>This month</b><span>Rate your month and set a focus</span></div></button><button type="button" data-go="progress"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><b>My progress report</b><span>See how far you have come. Download as PDF or Word</span></div></button><button type="button" data-go="reminders"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0-6 6c0 6-2 7-2 7h16s-2-1-2-7a6 6 0 0 0-6-6zM10 20a2 2 0 0 0 4 0"/></svg><div><b>Daily reminder and nudges</b><span>So you never forget to plan your day</span></div></button><button type="button" data-go="backup"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg><div><b>Save or restore my planner</b><span>Keep a copy safe, or bring your planner back</span></div></button><button type="button" data-go="about"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#3F5A9E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v.01M12 11v5M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/></svg><div><b>How Planniit works</b><span>A short guide, privacy and how to install it</span></div></button></div>
+  <div class="menu"><button type="button" data-go="badges"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4c0 3 1 4 4 4M16 6h4c0 3-1 4-4 4M12 13v4M8 20h8"/></svg><div><b>My level and badges</b><span>See your rank, your XP and every badge you can earn</span></div></button><button type="button" data-go="review"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg><div><b>This week</b><span>Look back and plan next week</span></div></button><button type="button" data-go="monthly"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H5zM5 9h14"/></svg><div><b>This month</b><span>Rate your month and set a focus</span></div></button><button type="button" data-go="progress"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><b>My progress report</b><span>See how far you have come. Download as PDF or Word</span></div></button><button type="button" data-go="reminders"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0-6 6c0 6-2 7-2 7h16s-2-1-2-7a6 6 0 0 0-6-6zM10 20a2 2 0 0 0 4 0"/></svg><div><b>Daily reminder and nudges</b><span>So you never forget to plan your day</span></div></button><button type="button" data-go="backup"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg><div><b>Save or restore my planner</b><span>Keep a copy safe, or bring your planner back</span></div></button><button type="button" data-go="about"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#4A44B8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v.01M12 11v5M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/></svg><div><b>How Planniit works</b><span>A short guide, privacy and how to install it</span></div></button></div>
 </section>
 
 <section class="view" id="reminders">
@@ -491,13 +550,23 @@ body.unlocked .bnav{display:flex}
         <li><strong>Computer:</strong> in Chrome, look for the install icon at the right end of the address bar.</li>
       </ul>
     </div>
+    <div class="card span-12"><div class="label">How the game works</div><p style="margin:0 0 8px"><b>Earn XP every day.</b> Plan your day (+20), finish your tasks (up to +40), learn something (+20), record your time (+10), learn at least as long as you scroll (+10), and track your money (+10).</p><p style="margin:0 0 8px"><b>Level up.</b> Your XP grows into ten ranks, from Stargazer to Legend.</p><p style="margin:0"><b>Collect badges.</b> Build streaks, finish reviews and reach goals to unlock them. Missing a day never takes anything away. Just come back.</p></div>
     <div class="card span-12"><div class="label">Text size</div><p style="margin:0 0 10px">Make everything bigger if it is easier on your eyes.</p><button type="button" class="btn" id="bigText" aria-pressed="false">Make text bigger</button></div>
   </div>
 </section>
 
+<section class="view" id="badges">
+  <button type="button" class="back" data-go="more">&larr; Back to More</button>
+  <div class="head"><div><h2>My level and badges</h2><p class="sub">Every plan you make earns XP. XP raises your level. Habits unlock badges.</p></div></div>
+  <div class="grid"><div class="card span-12 player" id="lvCard"></div><div class="card span-12"><div class="label" id="badgeCount"></div><div class="badges" id="badgeGrid"></div></div></div>
+</section>
+
+
 
 </main>
 
+<div class="overlay" id="lvlUp"><div class="modal lvmodal"><div class="lvicon" id="lvIcon"></div><div class="lvkick" id="lvKick">LEVEL UP</div><h3 id="lvTitle"></h3><p id="lvSub"></p><div class="actions" style="justify-content:center"><button class="btn primary" id="lvClose">Keep going</button><button class="btn" id="lvShare">Share</button></div></div></div>
+<div class="xppop" id="xpPop"></div>
 <div class="toast" id="toast"></div>
 <nav class="bnav" aria-label="Main"><button type="button" data-group="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg><span>Home</span></button><button type="button" data-group="plan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg><span>Plan</span></button><button type="button" data-group="learn"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Time &amp; Learn</span></button><button type="button" data-group="money"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg><span>Money</span></button><button type="button" data-group="more"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg><span>More</span></button></nav>
 
@@ -551,7 +620,7 @@ const TABS=['dashboard','vision','daily','time','skills','money','review','month
 const defaults={commitment:'',vision:{},daily:[],times:[],skills:[],money:[],reviews:[],monthly:[],budget:{},settings:{}};
 let data=load();
 function load(){try{return Object.assign(structuredClone(defaults),JSON.parse(localStorage.getItem(KEY)||'{}'))}catch(e){return structuredClone(defaults)}}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){toast('Planniit could not save on this device. Please check that your phone allows it to store information.')}renderDashboard()}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){toast('Planniit could not save on this device. Please check that your phone allows it to store information.')}renderDashboard();gameTick()}
 const $=id=>document.getElementById(id);
 function val(id){return $(id).value.trim()}
 function num(id){return Math.max(0,Number(val(id))||0)}
@@ -579,7 +648,7 @@ function msg(page,text,type){const el=$('msg-'+page);if(!el)return;el.textConten
 function clearMsgs(){document.querySelectorAll('.msg').forEach(m=>m.style.display='none')}
 function bad(id){const el=$(id);if(el){el.classList.add('invalid');el.focus({preventScroll:false})}}
 function fail(page,text,focusId){msg(page,text,'err');if(focusId)bad(focusId);return false}
-const GROUPS={home:['dashboard'],plan:['daily','vision'],learn:['time','skills'],money:['money'],more:['more','review','monthly','progress','reminders','backup','about']};
+const GROUPS={home:['dashboard'],plan:['daily','vision'],learn:['time','skills'],money:['money'],more:['more','badges','review','monthly','progress','reminders','backup','about']};
 const SEGS={plan:[['daily','Today'],['vision','My goals']],learn:[['time','My time'],['skills','Learning']]};
 const lastIn={};
 function groupOf(id){for(const g in GROUPS)if(GROUPS[g].indexOf(id)>=0)return g;return 'home'}
@@ -1339,7 +1408,7 @@ $('restoreGo').onclick=()=>{
     if(!d.vision||typeof d.vision!=='object')d.vision={};
     if(!d.budget||typeof d.budget!=='object'||Array.isArray(d.budget))d.budget={};
     if(!d.settings||typeof d.settings!=='object')d.settings={};
-    data=d;persist();try{sessionStorage.setItem('ilp-note','Your planner is back.')}catch(err){}location.reload()})};
+    delete d.settings.gameInit;    data=d;persist();try{sessionStorage.setItem('ilp-note','Your planner is back.')}catch(err){}location.reload()})};
 $('resetData').onclick=()=>confirmBox('Start over?','This erases everything you have saved in this planner on this device: your vision, plans, learning, money and reviews. Save a backup copy first if you may want it back. This cannot be undone.','Yes, erase everything',()=>{
   try{localStorage.removeItem(KEY)}catch(err){}
   try{sessionStorage.setItem('ilp-note','Planner cleared. You have a fresh start.')}catch(err){}
@@ -1515,12 +1584,11 @@ function levelFor(n){return n>=60?'Legend':n>=30?'Unstoppable':n>=14?'Consistent
 function renderJourney(){
   const td=today(),planned=new Set(data.daily.map(x=>x.date)),all=new Set(data.daily.filter(x=>x.tasks.length&&x.tasks.every(t=>t.done)).map(x=>x.date));
   const sf=scoreFor(td);
-  $('ringNum').textContent=sf.sc;$('ringArc').setAttribute('stroke-dashoffset',(251.3*(1-sf.sc/100)).toFixed(1));
+  $('ringNum').textContent=sf.sc;
   $('scoreMsg').textContent=sf.sc>=90?'Spectacular day. You are building the life you want.':sf.sc>=60?'Strong day. Keep it going.':sf.sc>=25?'Good start. Keep going.':'A fresh day. Plan it in two minutes.';
-  const todo=sf.parts.filter(p=>!p[2]).map(p=>p[0]+' (+'+p[1]+')');
-  $('scoreHow').textContent=todo.length?'Still to earn today: '+todo.join(', ')+'.':'You earned every point today.';
+  renderGame(sf);
   let st=0,c=planned.has(td)?td:addDays(td,-1);while(planned.has(c)){st++;c=addDays(c,-1)}
-  $('streakNum').textContent=st;$('streakTxt').textContent=(st===1?'day':'days')+' in a row';
+  $('streakNum').textContent=st;$('hudStreak').textContent=st;$('streakTxt').textContent=(st===1?'day':'days')+' in a row';
   data.settings=data.settings||{};
   if(!data.settings.firstOpen){const ds=[].concat(data.daily,data.times,data.skills,data.money).map(x=>x.date).filter(Boolean).sort();data.settings.firstOpen=(ds[0]&&ds[0]<td)?ds[0]:td;persist()}
   /* the journey begins the day they started (or the start date they chose, if later). Days before that are never counted. */
@@ -1529,13 +1597,85 @@ function renderJourney(){
   let h='';
   for(let i=0;i<90;i++){const d=addDays(start,i);h+=`<div class="jd ${stat(d)}${d===td?' t':''}" title="${d}">${i+1}</div>`}
   $('journeyMap').innerHTML=h;
+  {const wn=n<=30?'World 1 · Ignite':n<=60?'World 2 · Build':'World 3 · Shine';$('worldTag').textContent=td<start?'Starts soon':n>90?'Complete':wn}
   $('journeyBar').style.width=(td<start?0:Math.min(100,Math.round(n/90*100)))+'%';
   const wd=new Date(td+'T00:00'),mon=addDays(td,-((wd.getDay()+6)%7)),names=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],words={w:'Done',p:'Planned',m:'',n:'Today',f:'',x:''};
   let wk='';for(let i=0;i<7;i++){const d=addDays(mon,i),k=stat(d);wk+=`<div class="wd ${k}${d===td?' t':''}"><span>${names[i]}</span><b>${+d.slice(8)}</b><i>${words[k]}</i></div>`}
   $('weekStrip').innerHTML=wk;
-  $('journeyText').textContent=(td<start?'Your 90 days start on '+fdate(start)+'. ':n>90?'Your 90 days are complete. ':'Day '+n+' of 90. ')+'You have planned '+planned.size+(planned.size===1?' day':' days')+' and finished every task on '+all.size+'. Your level: '+levelFor(planned.size)+'.'}
+  $('journeyText').textContent=(td<start?'Your 90 days start on '+fdate(start)+'. ':n>90?'Your 90 days are complete. ':'Day '+n+' of 90. ')+'You have planned '+planned.size+(planned.size===1?' day':' days')+' and finished every task on '+all.size+'.'}
+
+/* ================= the game: XP, levels, quests, badges ================= */
+const LEVELS=[[0,'Stargazer'],[80,'Explorer'],[220,'Navigator'],[450,'Pathfinder'],[800,'Trailblazer'],[1300,'Orbit Keeper'],[2000,'Pioneer'],[2900,'Starforger'],[4000,'Skymaker'],[5400,'Legend']];
+const IC={star:'M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.200 9.500l6.100-.9z',flame:'M12 3c1 3.500 5 5.500 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z',book:'M4 5h7v14H4zM13 5h7v14h-7z',clock:'M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM12 8v4l3 2',coin:'M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM12 8v8M9.500 10.500c0-1 1-1.500 2.500-1.500s2.500.5 2.500 1.500-1 1.300-2.500 1.500-2.500.5-2.500 1.500 1 1.500 2.500 1.500 2.500-.5 2.500-1.500',flag:'M6 21V4M6 5h11l-2 4 2 4H6',bolt:'M13 3L5 13h6l-1 8 8-10h-6z',moon:'M20 14a8 8 0 1 1-10-10 6.500 6.500 0 0 0 10 10z',crown:'M4 18l-1-9 5 4 4-7 4 7 5-4-1 9z',target:'M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z',leaf:'M5 19c0-9 5-14 14-14 0 9-5 14-14 14zM5 19l8-8',trophy:'M8 4h8v5a4 4 0 0 1-8 0zM8 6H4c0 3 1 4 4 4M16 6h4c0 3-1 4-4 4M12 13v4M8 20h8',mountain:'M3 19l6-10 4 6 3-4 5 8z',rocket:'M12 3c3 2 5 5 5 9l-2 3H9l-2-3c0-4 2-7 5-9zM9 15l-2 4M15 15l2 4M12 9v.01',sun:'M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2',heart:'M12 20s-7-4.500-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.500-7 10-7 10z'};
+const svgi=k=>'<svg viewBox="0 0 24 24"><path d="'+IC[k]+'"/></svg>';
+const BADGES=[
+ ['first','First Step','Plan your first day','flag',c=>c.planned>=1],
+ ['dream','Dreamer','Write your 90-day vision','star',c=>!!(data.vision&&data.vision.goal)],
+ ['perfect','Perfect Day','Finish every task in a day','target',c=>c.allDone>=1],
+ ['spark','Spark','Plan 3 days in a row','bolt',c=>c.best>=3],
+ ['week','Week Warrior','Plan 7 days in a row','flame',c=>c.best>=7],
+ ['fort','Unstoppable','Plan 14 days in a row','mountain',c=>c.best>=14],
+ ['month','Month Master','Plan 30 days in a row','crown',c=>c.best>=30],
+ ['scholar','Scholar','Log 5 learning sessions','book',c=>data.skills.length>=5],
+ ['deep','Deep Diver','Learn for 10 hours in total','rocket',c=>c.learnH>=10],
+ ['detect','Time Detective','Record your time on 3 days','clock',c=>data.times.length>=3],
+ ['money','Money Minded','Start tracking your money','coin',c=>c.money],
+ ['saver','Saver','Set a savings goal','heart',c=>c.saver],
+ ['reflect','Reflector','Finish a weekly review','moon',c=>data.reviews.length>=1],
+ ['big','Big Picture','Finish a monthly review','sun',c=>data.monthly.length>=1],
+ ['half','Halfway There','Plan 45 days','leaf',c=>c.planned>=45],
+ ['finish','Finisher','Plan 85 of your 90 days','trophy',c=>c.planned>=85]];
+function gameCtx(){
+  const pl=[...new Set(data.daily.map(x=>x.date))].sort();let best=0,run=0,prev='';
+  pl.forEach(d=>{run=(prev&&addDays(prev,1)===d)?run+1:1;if(run>best)best=run;prev=d});
+  const bd=data.budget||{},bv=Object.values(bd);
+  return {planned:pl.length,best,allDone:data.daily.filter(x=>x.tasks.length&&x.tasks.every(t=>t.done)).length,learnH:data.skills.reduce((a,x)=>a+(Number(x.hours)||0),0),
+    money:data.money.length>0||bv.some(m=>(m.income>0)||(m.expenses&&m.expenses.length)),saver:bv.some(m=>m.goal>0)}}
+function badgesNow(){const c=gameCtx();return BADGES.filter(b=>b[4](c)).map(b=>b[0])}
+function moneyDay(d){return data.money.some(x=>x.date===d)||Object.values(data.budget||{}).some(m=>(m.expenses||[]).some(e=>e.date===d))}
+function xpDay(d){return scoreFor(d).sc+(moneyDay(d)?10:0)}
+function totalXP(){const ds=new Set();[].concat(data.daily,data.times,data.skills,data.money).forEach(x=>x.date&&ds.add(x.date));Object.values(data.budget||{}).forEach(m=>(m.expenses||[]).forEach(e=>e.date&&ds.add(e.date)));
+  let x=0;ds.forEach(d=>x+=xpDay(d));return x+badgesNow().length*25}
+function levelOf(xp){let i=0;LEVELS.forEach((l,k)=>{if(xp>=l[0])i=k});const lo=LEVELS[i][0],hi=i<LEVELS.length-1?LEVELS[i+1][0]:null;return {n:i+1,name:LEVELS[i][1],lo,hi,pct:hi===null?100:Math.round((xp-lo)/(hi-lo)*100)}}
+var lastXP=null;
+function renderGame(sf){
+  if(!(data.settings||{}).gameInit)gameTick();
+  const xp=totalXP(),lv=levelOf(xp);
+  $('lvNum').textContent=lv.n;$('lvName').textContent=lv.name;$('xpFill').style.width=lv.pct+'%';$('xpArc').setAttribute('stroke-dashoffset',(251.3*(1-lv.pct/100)).toFixed(1));
+  $('xpText').textContent=lv.hi===null?xp+' XP · You reached the top level':xp+' XP · '+(lv.hi-xp)+' XP to '+LEVELS[lv.n][1];
+  $('hudLv').textContent=lv.n;$('hudName').textContent=lv.name;$('hudFill').style.width=lv.pct+'%';$('hudStreak').textContent=$('streakNum').textContent||0;
+  const tick='<svg viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7"/></svg>';
+  const go={'Plan your day':'daily','Finish your tasks':'daily','Learn something':'skills','Record your time':'time','Learn at least as long as you scroll':'time'};
+  const md=moneyDay(today());
+  const rows=sf.parts.map((p,i)=>p[2]?`<div class="q done"><span class="ck">${tick}</span><span class="t">${p[0]}</span><span class="xp">+${p[1]} XP</span></div>`:`<button type="button" class="q" data-go="${go[p[0]]}"><span class="nm">${i+1}</span><span class="t">${p[0]}</span><span class="xp">+${p[1]} XP</span><span class="go">›</span></button>`);
+  rows.push(md?`<div class="q done"><span class="ck">${tick}</span><span class="t">Track your money</span><span class="xp">+10 XP</span></div>`:`<button type="button" class="q" data-go="money"><span class="nm">6</span><span class="t">Track your money (bonus)</span><span class="xp">+10 XP</span><span class="go">›</span></button>`);
+  $('quests').innerHTML=rows.join('');
+  $('scoreMsg').textContent=sf.sc>=90?'Spectacular day. You are building the life you want.':sf.sc>=60?'Strong day. Keep it going.':sf.sc>=25?'Good start. Keep going.':'A fresh day. Pick a quest and start.';
+  if($('lvCard')){
+    $('lvCard').innerHTML=`<div class="pl-top"><div class="planet"><svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="#ffffff30" stroke-width="8"/><circle cx="48" cy="48" r="40" fill="none" stroke="#F5B942" stroke-width="8" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="${(251.3*(1-lv.pct/100)).toFixed(1)}"/></svg><div><small>LEVEL</small><b>${lv.n}</b></div></div><div class="pl-info"><div class="pl-rank">${lv.name}</div><div class="xpbar"><span style="width:${lv.pct}%"></span></div><div class="pl-xp">${$('xpText').textContent}</div></div></div>`;
+    const have=new Set(badgesNow());$('badgeCount').textContent=have.size+' of '+BADGES.length+' badges unlocked';
+    $('badgeGrid').innerHTML=BADGES.map(b=>`<div class="bd ${have.has(b[0])?'on':'off'}"><div class="ic">${svgi(b[3])}</div><b>${b[1]}</b><span>${have.has(b[0])?'Unlocked':b[2]}</span></div>`).join('')}}
+let lvQueue=[];
+function showModal(m){lvQueue.push(m);if(!$('lvlUp').classList.contains('show'))nextModal()}
+function nextModal(){const m=lvQueue.shift();if(!m){$('lvlUp').classList.remove('show');return}
+  $('lvIcon').innerHTML=m.icon;$('lvKick').textContent=m.kick;$('lvTitle').textContent=m.title;$('lvSub').textContent=m.sub;$('lvShare').dataset.text=m.share;
+  $('lvlUp').classList.add('show');celebrate()}
+$('lvClose').onclick=nextModal;
+$('lvShare').onclick=async()=>{const text=$('lvShare').dataset.text||'I am playing Planniit.';try{if(navigator.share){await navigator.share(BUY_URL?{text,url:BUY_URL}:{text});return}}catch(e){if(e&&e.name==='AbortError')return}
+  try{await navigator.clipboard.writeText(text+(BUY_URL?' '+BUY_URL:''));toast('Copied. Paste it to a friend.')}catch(e){toast('Sharing is not available here.')}};
+function xpPop(n){const e=$('xpPop');e.textContent='+'+n+' XP';e.classList.remove('go');void e.offsetWidth;e.classList.add('go')}
+function gameTick(){
+  const st=data.settings=data.settings||{},xp=totalXP(),lv=levelOf(xp),have=badgesNow();
+  if(!st.gameInit){st.gameInit=1;st.lvSeen=lv.n;st.badgesSeen=have;lastXP=xp;try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}return}
+  if(lastXP===null)lastXP=xp;
+  if(xp>lastXP)xpPop(xp-lastXP);lastXP=xp;
+  const seen=new Set(st.badgesSeen||[]),fresh=BADGES.filter(b=>have.includes(b[0])&&!seen.has(b[0])),up=lv.n>(st.lvSeen||1);
+  if(!up&&!fresh.length)return;
+  if(up)showModal({kick:'LEVEL UP',icon:'<b>'+lv.n+'</b>',title:lv.name,sub:'You reached level '+lv.n+'. Every plan you keep builds the life you want.',share:'I just reached Level '+lv.n+' ('+lv.name+') on Planniit. It turns planning into a game. Plan your time, learn something new, track your money.'});
+  if(fresh.length>2)showModal({kick:'BADGES UNLOCKED',icon:svgi('trophy'),title:fresh.length+' new badges',sub:'Nice work. See them all under More, My level and badges. +'+fresh.length*25+' XP',share:'I am collecting badges on Planniit. Plan your time, learn something new, track your money.'});else fresh.forEach(b=>showModal({kick:'BADGE UNLOCKED',icon:svgi(b[3]),title:b[1],sub:b[2]+'. +25 XP',share:'I just unlocked the "'+b[1]+'" badge on Planniit. Plan your time, learn something new, track your money.'}));
+  st.lvSeen=Math.max(lv.n,st.lvSeen||1);st.badgesSeen=have;try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}}
 function celebrate(){
-  const cols=['#3F5A9E','#D9825B','#E6B450','#12A47A','#5F7BC0'];
+  const cols=['#8279E0','#F0806C','#F5B942','#2FBF93','#FFD98A'];
   for(let i=0;i<44;i++){const e=document.createElement('span');e.className='confetti';e.style.left=Math.random()*100+'vw';e.style.background=cols[i%cols.length];e.style.animationDelay=(Math.random()*.5)+'s';e.style.borderRadius=i%3?'2px':'50%';document.body.appendChild(e);setTimeout(()=>e.remove(),3200)}}
 /* ---------- nudges when you forget to plan ---------- */
 const NUDGES=[['Your day is waiting','It is {t}. You have not planned today yet. Take two minutes and choose your 3 tasks.'],['Time is moving','An hour has passed and your plan is still empty. Do not let today decide for you. Open Planniit and set 3 tasks.'],['Two hours gone','You still have not planned today. Even one small task counts. Open Planniit and start.']];
